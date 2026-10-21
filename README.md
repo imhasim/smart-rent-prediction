@@ -1,19 +1,37 @@
-xxx
-
 # 🏠 Smart Rent Prediction
 
 ### Machine Learning–Powered House Rent Estimation
 
 Smart Rent Prediction is a machine learning web application that estimates monthly house rent based on property details. It uses a trained **XGBoost regression model** and helps users compare the estimated rent with similar property listings available in the dataset.
 
+🚀 **Live Demo:** [Try Smart Rent Prediction](https://smart-rent-prediction-jpbmu7jrd7fhorqhrojsoi.streamlit.app/)
+
+📂 **GitHub Repository:** [imhasim/smart-rent-prediction](https://github.com/imhasim/smart-rent-prediction)
+
 ## ✨ Features
 
 - **Rent Prediction:** Estimate monthly house rent based on selected property details.
 - **Property Details:** Select city, BHK, bathrooms, furnishing, area, and other available inputs.
-- **Similar Property Listings:** Explore comparable properties based on city, BHK, bathrooms, furnishing, and area.
+- **Similar Property Listings:** Explore comparable properties based on selected property details.
 - **Rent Comparison Chart:** Compare the model's estimated rent with rents recorded in similar listings.
 - **Interactive Dashboard:** Use a Streamlit interface with a dark-themed design.
 - **Data-Driven Estimates:** Generate predictions using a previously trained machine learning model.
+
+## 🖥️ Live Application
+
+Try the deployed application:
+
+👉 [Open Smart Rent Prediction](https://smart-rent-prediction-jpbmu7jrd7fhorqhrojsoi.streamlit.app/)
+
+## 📸 Screenshots
+
+### Dashboard
+
+![Smart Rent Prediction Dashboard](screenshots/dashboard.png)
+
+### Rent Prediction and Similar Listings
+
+![Rent Prediction Results](screenshots/prediction.png)
 
 ## 🛠️ Tech Stack
 
@@ -32,7 +50,7 @@ Smart Rent Prediction is a machine learning web application that estimates month
 1. **User Input:** The user selects property details through the dashboard.
 2. **Feature Preparation:** Input values are mapped to the features expected by the trained model.
 3. **Model Prediction:** The saved XGBoost model estimates the monthly rent.
-4. **Similar Listings:** The application filters property records and ranks comparable listings.
+4. **Similar Listings:** The application filters property records and finds comparable listings.
 5. **Visualization:** A chart compares the predicted rent with rents recorded in the selected listings.
 
 ## 📂 Project Structure
@@ -46,6 +64,9 @@ smart-rent-prediction/
 ├── rent_model_features.pkl
 ├── cities_magicbricks_rental_prices.csv
 ├── Makaan_data_700pages.csv
+├── screenshots/
+│   ├── dashboard.png
+│   └── prediction.png
 └── README.md
 ```
 
@@ -63,15 +84,10 @@ git clone https://github.com/imhasim/smart-rent-prediction.git
 cd smart-rent-prediction
 ```
 
-### 3. Create a virtual environment
+### 3. Create and activate a virtual environment
 
 ```bash
 python -m venv .venv
-```
-
-Activate it on macOS or Linux:
-
-```bash
 source .venv/bin/activate
 ```
 
@@ -97,7 +113,7 @@ Streamlit will display a local URL in the terminal. Open that URL in your browse
 - **Property dataset:** `cities_magicbricks_rental_prices.csv`
 - **Additional dataset:** `Makaan_data_700pages.csv`
 
-The application loads the saved model and feature list to generate predictions. The property dataset is used to find similar listings and compare recorded rental values.
+The application loads the saved model and feature list to generate predictions. The property datasets support similar-listing comparisons and visualization.
 
 ## ⚠️ Important Disclaimer
 
@@ -105,7 +121,6 @@ Predicted rent values are estimates, not guaranteed market prices. Similar listi
 
 ## 🔮 Future Improvements
 
-- Deploy the application online.
 - Add more property locations and updated rental datasets.
 - Improve model evaluation and document performance metrics.
 - Add interactive filters and additional visualizations.
@@ -121,11 +136,3 @@ Predicted rent values are estimates, not guaranteed market prices. Similar listi
 ---
 
 *Built with Python, Streamlit, and XGBoost.*
-
-## 📸 Screenshots
-
-### Dashboard
-![Smart Rent Prediction Dashboard](screenshots/dashboard.png)
-
-### Rent Prediction and Similar Listings
-![Rent Prediction Results](screenshots/prediction.png)
