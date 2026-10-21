@@ -121,3 +121,11 @@ Predicted rent values are estimates, not guaranteed market prices. Similar listi
 ---
 
 *Built with Python, Streamlit, and XGBoost.*
+
+## 📸 Screenshots
+
+### Dashboard
+![Smart Rent Prediction Dashboard](screenshots/dashboard.png)
+
+### Rent Prediction and Similar Listings
+![Rent Prediction Results](screenshots/prediction.png)
